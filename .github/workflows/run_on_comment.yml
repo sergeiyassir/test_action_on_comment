@@ -12,3 +12,4 @@ jobs:
       - name: Log branch name
         run: |
           echo github.ref: ${{ github.ref }} github.head_ref: ${{ github.head_ref }}
+
