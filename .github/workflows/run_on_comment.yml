@@ -5,7 +5,7 @@ on:
 
 jobs:
   test1:
-    if: ${{ github.event.issue.pull_request && startsWith(github.event.issue.body, 'build please') }}
+    if: ${{ github.event.issue.pull_request && startsWith(github.event.issue_comment.comment, 'build please') }}
     runs-on: ubuntu-latest
     steps:
       - name: Log branch name
